@@ -1,0 +1,26 @@
+# Node
+backend/node_modules/
+backend/db/traceboard.db
+backend/db/traceboard.db-shm
+backend/db/traceboard.db-wal
+backend/.env
+
+# Temp / test files
+_check.js
+_audit.js
+_runner.js
+_runner.cjs
+_test.js
+_newjs.js
+_r.cjs
+_t2.cjs
+_t3.cjs
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
