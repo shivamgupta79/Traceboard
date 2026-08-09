@@ -1,7 +1,7 @@
 # Traceboard — IoT Component Advisor
-<img width="1919" height="936" alt="Screenshot 2026-08-09 161244" src="https://github.com/user-attachments/assets/ee0d69b4-9591-450e-9976-990b7d9a7f89" />
-> Pick the right parts for any IoT project in 4 steps. Get a matched wiring diagram, a full buy list, starter code, and an AI-powered code editor — all in a single HTML file.
 
+Pick the right parts for any IoT project in 4 steps. Get a matched wiring diagram, a full buy list, starter code, and an AI-powered code editor — all in a single HTML file.
+<img width="1919" height="936" alt="Screenshot 2026-08-09 161244" src="https://github.com/user-attachments/assets/ee0d69b4-9591-450e-9976-990b7d9a7f89" />
 
 ---
 
@@ -30,9 +30,21 @@ No sign-up required to browse. Full features unlock with a free or paid account.
 | Step | What happens |
 |------|-------------|
 | **1 — Project type** | Choose from 7 categories or describe a custom idea (Pro+) |
+<img width="1899" height="942" alt="Screenshot 2026-08-09 161315" src="https://github.com/user-attachments/assets/a1ae26b9-7742-429b-8378-7b4c14b036cd" />
+
+
 | **2 — Constraints** | Pick parts needed, power, connectivity, budget, experience |
+<img width="1919" height="938" alt="Screenshot 2026-08-09 161342" src="https://github.com/user-attachments/assets/0e321953-2d98-4df3-88d2-3358048b5edf" />
+
+
 | **3 — Components** | Multi-select MCU / connectivity / power / sensors from scored shortlist |
+<img width="1919" height="946" alt="Screenshot 2026-08-09 161359" src="https://github.com/user-attachments/assets/ac196506-df28-4296-906a-cda678a4e64e" />
+
+
+
 | **4 — Results** | Wiring diagram, product cards, buy list, cost estimate, code generator |
+<img width="1918" height="949" alt="Screenshot 2026-08-09 161414" src="https://github.com/user-attachments/assets/4452c649-40e1-4906-a6e2-b74807f07c39" />
+
 
 ### Custom Project AI (Pro+)
 Type your idea in plain English — "smart irrigation with solar and LoRa" — and the analyser detects the project domain, connectivity preference, power type, and matched components, then pre-fills the wizard.
@@ -44,7 +56,7 @@ Auto-generated SVG circuit diagram for every build. Colour-coded by interface ty
 Click **</> Generate Code** after Step 4 to open the full-screen code editor:
 - Generates complete Arduino C++ or MicroPython starter code
 - Three styles: Basic with comments / Class-based OOP / FreeRTOS multi-task
-- Built-in line-numbered editor with Tab indentation support
+
 - Copy to clipboard or download as `.ino` / `main.py`
 
 ### AI Chat Assistant (bring your own key)
