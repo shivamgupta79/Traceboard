@@ -28,27 +28,22 @@ No sign-up required to browse. Full features unlock with a free or paid account.
 
 ### 4-Step Wizard
 | Step | What happens |
-|------|-------------|
+| --- | --- |
 | **1 — Project type** | Choose from 7 categories or describe a custom idea (Pro+) |
 <img width="1899" height="942" alt="Screenshot 2026-08-09 161315" src="https://github.com/user-attachments/assets/a1ae26b9-7742-429b-8378-7b4c14b036cd" />
----
----
----
-|------|-------------|
+
+| --- | --- |
 | **2 — Constraints** | Pick parts needed, power, connectivity, budget, experience |
 <img width="1919" height="938" alt="Screenshot 2026-08-09 161342" src="https://github.com/user-attachments/assets/0e321953-2d98-4df3-88d2-3358048b5edf" />
----
----
----
-|------|-------------|
+
+| --- | --- |
 | **3 — Components** | Multi-select MCU / connectivity / power / sensors from scored shortlist |
 <img width="1919" height="946" alt="Screenshot 2026-08-09 161359" src="https://github.com/user-attachments/assets/ac196506-df28-4296-906a-cda678a4e64e" />
 ---
 
-|------|-------------|
+| --- | --- |
 | **4 — Results** | Wiring diagram, product cards, buy list, cost estimate, code generator |
 <img width="1918" height="949" alt="Screenshot 2026-08-09 161414" src="https://github.com/user-attachments/assets/4452c649-40e1-4906-a6e2-b74807f07c39" />
-
 
 ### Custom Project AI (Pro+)
 Type your idea in plain English — "smart irrigation with solar and LoRa" — and the analyser detects the project domain, connectivity preference, power type, and matched components, then pre-fills the wizard.
@@ -71,7 +66,7 @@ Inside the code editor, click **✦ AI Chat** to open the assistant panel:
 - API key stored only in `localStorage` — never leaves your browser except to the chosen provider
 
 | Provider | Default model | Where to get key |
-|----------|--------------|-----------------|
+| --- |--------------|-----------------|
 | OpenAI | `gpt-4o-mini` | platform.openai.com |
 | Gemini | `gemini-1.5-flash` | aistudio.google.com |
 | Groq | `llama-3.1-70b-versatile` | console.groq.com (free) |
@@ -79,7 +74,7 @@ Inside the code editor, click **✦ AI Chat** to open the assistant panel:
 
 ### Subscription Plans
 | Plan | Price | Save builds | Export BOM | Custom project AI |
-|------|-------|-------------|------------|-------------------|
+| --- | --- | --- | --- |-------------------|
 | **Basic** | Free | ✗ | ✗ | ✗ |
 | **Starter** | ₹199/mo | ✓ (10 max) | ✓ | ✗ |
 | **Pro** | ₹499/mo | ✓ Unlimited | ✓ | ✓ |
@@ -107,7 +102,7 @@ Inside the code editor, click **✦ AI Chat** to open the assistant panel:
 **ESP32 Family — 13 boards**
 
 | Board | Wi-Fi | BLE | Price (₹) | Best for |
-|-------|-------|-----|-----------|---------|
+| --- |-------| --- | --- |---------|
 | ESP32 DevKit V1 | ✓ | ✓ | 350–450 | General IoT |
 | ESP32-S3 DevKit | ✓ | ✓ | 450–600 | ML / TinyAI |
 | ESP32-S2 Solo | ✓ | — | 350–480 | USB HID sensors |
@@ -125,7 +120,7 @@ Inside the code editor, click **✦ AI Chat** to open the assistant panel:
 **Arduino Family — 11 boards**
 
 | Board | Notes | Price (₹) |
-|-------|-------|-----------|
+| --- |-------| --- |
 | Arduino Nano (ATmega328P) | Tiny, breadboard-friendly | 180–280 |
 | Arduino Mega 2560 | 54 digital I/O, 4 UART | 550–750 |
 | Arduino Pro Mini 3.3V/5V | Bare-bones, needs FTDI | 120–200 |
@@ -141,7 +136,7 @@ Inside the code editor, click **✦ AI Chat** to open the assistant panel:
 **Other MCUs — 5 boards**
 
 | Board | Notes | Price (₹) |
-|-------|-------|-----------|
+| --- |-------| --- |
 | ESP8266 NodeMCU | Wi-Fi only, budget | 200–280 |
 | Raspberry Pi Pico W | RP2040, Wi-Fi+BLE, MicroPython | 450–550 |
 | Arduino Uno R3 | Classic, 5V, huge ecosystem | 450–600 |
@@ -194,7 +189,7 @@ HC-05 Bluetooth, NRF24L01 2.4GHz mesh, SIM800L GSM/GPRS, LoRa Ra-02 (SX1278)
 ## Project Categories & Sensor Roles
 
 | Category | Roles |
-|----------|-------|
+| --- | --- |
 | 🏠 Home Automation | Motion (PIR), climate (DHT22), switching (relay) |
 | 🌿 Environment | Temp/humidity, pressure/altitude, air quality |
 | ⌚ Wearable Health | Heart rate + SpO2, 6-axis IMU, GSR stress |
@@ -211,20 +206,22 @@ HC-05 Bluetooth, NRF24L01 2.4GHz mesh, SIM800L GSM/GPRS, LoRa Ra-02 (SX1278)
 
 Just open the HTML file:
 
+
 ```
 # Windows
 start index_2.html
 
 # macOS / Linux
 open index_2.html
-```
 
+```
 Or serve it with any static server:
+
 
 ```bash
 npx serve .         # from the project root
-```
 
+```
 The entire frontend is a **single self-contained HTML file** — no build step, no npm install, no bundler.
 
 ### Backend API (optional — for persistent storage)
@@ -232,6 +229,7 @@ The entire frontend is a **single self-contained HTML file** — no build step, 
 The backend adds a REST API with SQLite persistence for builds and analytics.
 
 **Requirements:** Node.js 22.5.0+
+
 
 ```bash
 cd backend
@@ -242,19 +240,20 @@ node server.js
 
 # Start (development, auto-reload)
 npm run dev
-```
 
+```
 Server starts at `http://localhost:3001`. On first run the database is created and all 88 parts are seeded automatically.
+
 
 ```
   ✦  Traceboard API running on http://localhost:3001
      Health check → http://localhost:3001/api/health
-```
 
+```
 **Environment variables** — copy `backend/.env.example` to `backend/.env`:
 
 | Variable | Default | Description |
-|----------|---------|-------------|
+| --- |---------| --- |
 | `PORT` | `3001` | API port |
 | `ALLOWED_ORIGINS` | `*` | Comma-separated CORS allowlist |
 
@@ -265,18 +264,21 @@ Server starts at `http://localhost:3001`. On first run the database is created a
 Base URL: `http://localhost:3001`
 
 ### Health
+
 ```
 GET /api/health
-```
 
+```
 ### Parts Catalogue
+
 ```
 GET  /api/parts               # full list (?cat=mcu&q=esp32)
 GET  /api/parts/stats         # counts per category
 GET  /api/parts/:id           # single part
-```
 
+```
 ### Recommendation Engine
+
 ```
 POST /api/recommend
 {
@@ -286,29 +288,32 @@ POST /api/recommend
   "budget":  "standard",    // budget | standard | premium
   "exp":     "beginner"     // beginner | intermediate | advanced
 }
-```
 
+```
 ### Saved Builds
+
 ```
 GET    /api/builds?session=<uuid>   # list builds
 POST   /api/builds                  # save build
 GET    /api/builds/:id              # load one
 DELETE /api/builds/:id              # delete
-```
 
+```
 ### Export
+
 ```
 POST /api/export/txt    # plain-text BOM download
 POST /api/export/json   # structured JSON export
-```
 
+```
 ### Analytics
+
 ```
 GET /api/analytics/popular-projects
 GET /api/analytics/popular-mcus
 GET /api/analytics/prefs
-```
 
+```
 ---
 
 ## Code Generator — Supported Parts
@@ -316,7 +321,7 @@ GET /api/analytics/prefs
 The code generator produces ready-to-compile code with the correct library includes, pin defines, `setup()` and `loop()` for every part below.
 
 | Part | Library used |
-|------|-------------|
+| --- | --- |
 | DHT11 / DHT22 | DHT sensor library (Adafruit) |
 | BME280 | Adafruit BME280 |
 | BMP280 | Adafruit BMP280 |
@@ -342,34 +347,35 @@ The code generator produces ready-to-compile code with the correct library inclu
 
 ## Project Structure
 
+
 ```
 Traceboard/
-├── index_2.html          
+├── index_2.html
 ├── README.md
 └── backend/
-    ├── server.js         
+    ├── server.js
     ├── package.json
     ├── .env.example
     ├── db/
-    │   ├── database.js   
-    │   ├── schema.sql    
-    │   └── seed.js       
+    │   ├── database.js
+    │   ├── schema.sql
+    │   └── seed.js
     ├── engine/
-    │   └── recommender.js  
+    │   └── recommender.js
     └── routes/
-        ├── parts.js     
-        ├── recommend.js  
-        ├── builds.js     
-        ├── export.js     
-        └── analytics.js  
-```
+        ├── parts.js
+        ├── recommend.js
+        ├── builds.js
+        ├── export.js
+        └── analytics.js
 
+```
 ---
 
 ## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+| --- | --- |
 | Frontend | Vanilla HTML / CSS / JS — zero dependencies, single file |
 | Fonts | Space Grotesk + JetBrains Mono (Google Fonts) |
 | Backend runtime | Node.js 22.5+ |
