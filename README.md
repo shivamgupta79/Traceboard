@@ -329,28 +329,6 @@ Works in any modern browser. No polyfills needed.
 
 ---
 
-## Security Notes
-
-- API keys entered in the AI Chat panel are stored only in the browser's `localStorage` — they are never sent to Traceboard servers
-- All outbound AI requests go directly from your browser to the chosen provider (OpenAI / Google / Groq / Ollama)
-- Auth credentials in demo mode are stored hashed (`btoa`) in `localStorage` — replace with a real auth backend before production deployment
-- The backend uses `helmet` for HTTP security headers and `express-validator` for input sanitisation
-
----
-
-## Roadmap
-
-- [ ] Real backend auth (JWT + bcrypt)
-- [ ] Cloud-synced saved builds
-- [ ] Shareable build URLs
-- [ ] PDF BOM export
-- [ ] Component compatibility checker
-- [ ] Kicad / Fritzing wiring export
-- [ ] Multi-project workspace (Enterprise)
-- [ ] Mobile app (PWA)
-
----
-
 ## License
 
 MIT — see `LICENSE` for details.
