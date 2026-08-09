@@ -1,6 +1,7 @@
 # Traceboard — IoT Component Advisor
-
+<img width="1919" height="936" alt="Screenshot 2026-08-09 161244" src="https://github.com/user-attachments/assets/ee0d69b4-9591-450e-9976-990b7d9a7f89" />
 > Pick the right parts for any IoT project in 4 steps. Get a matched wiring diagram, a full buy list, starter code, and an AI-powered code editor — all in a single HTML file.
+
 
 ---
 
@@ -327,24 +328,24 @@ The code generator produces ready-to-compile code with the correct library inclu
 
 ```
 Traceboard/
-├── index_2.html          ← Complete frontend (single-page app, ~3700 lines)
+├── index_2.html          
 ├── README.md
 └── backend/
-    ├── server.js         ← Express entry point (port 3001)
+    ├── server.js         
     ├── package.json
     ├── .env.example
     ├── db/
-    │   ├── database.js   ← SQLite init + auto-seed on first run
-    │   ├── schema.sql    ← parts, saved_builds, recommendation_log tables
-    │   └── seed.js       ← 88-part catalogue seed data
+    │   ├── database.js   
+    │   ├── schema.sql    
+    │   └── seed.js       
     ├── engine/
-    │   └── recommender.js  ← Scoring & pick logic (mirrors frontend)
+    │   └── recommender.js  
     └── routes/
-        ├── parts.js      ← GET /api/parts
-        ├── recommend.js  ← POST /api/recommend
-        ├── builds.js     ← CRUD /api/builds
-        ├── export.js     ← POST /api/export/txt|json
-        └── analytics.js  ← GET /api/analytics/*
+        ├── parts.js     
+        ├── recommend.js  
+        ├── builds.js     
+        ├── export.js     
+        └── analytics.js  
 ```
 
 ---
