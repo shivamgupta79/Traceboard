@@ -31,15 +31,19 @@ No sign-up required to browse. Full features unlock with a free or paid account.
 |------|-------------|
 | **1 — Project type** | Choose from 7 categories or describe a custom idea (Pro+) |
 <img width="1899" height="942" alt="Screenshot 2026-08-09 161315" src="https://github.com/user-attachments/assets/a1ae26b9-7742-429b-8378-7b4c14b036cd" />
-
+---
+---
+---
 |------|-------------|
 | **2 — Constraints** | Pick parts needed, power, connectivity, budget, experience |
 <img width="1919" height="938" alt="Screenshot 2026-08-09 161342" src="https://github.com/user-attachments/assets/0e321953-2d98-4df3-88d2-3358048b5edf" />
-
+---
+---
+---
 |------|-------------|
 | **3 — Components** | Multi-select MCU / connectivity / power / sensors from scored shortlist |
 <img width="1919" height="946" alt="Screenshot 2026-08-09 161359" src="https://github.com/user-attachments/assets/ac196506-df28-4296-906a-cda678a4e64e" />
-
+---
 
 |------|-------------|
 | **4 — Results** | Wiring diagram, product cards, buy list, cost estimate, code generator |
