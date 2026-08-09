@@ -32,17 +32,17 @@ No sign-up required to browse. Full features unlock with a free or paid account.
 | **1 — Project type** | Choose from 7 categories or describe a custom idea (Pro+) |
 <img width="1899" height="942" alt="Screenshot 2026-08-09 161315" src="https://github.com/user-attachments/assets/a1ae26b9-7742-429b-8378-7b4c14b036cd" />
 
-| --- | --- |
-| **2 — Constraints** | Pick parts needed, power, connectivity, budget, experience |
+
+**2 — Constraints** | Pick parts needed, power, connectivity, budget, experience
 <img width="1919" height="938" alt="Screenshot 2026-08-09 161342" src="https://github.com/user-attachments/assets/0e321953-2d98-4df3-88d2-3358048b5edf" />
 
-| --- | --- |
-| **3 — Components** | Multi-select MCU / connectivity / power / sensors from scored shortlist |
+
+**3 — Components** | Multi-select MCU / connectivity / power / sensors from scored shortlist 
 <img width="1919" height="946" alt="Screenshot 2026-08-09 161359" src="https://github.com/user-attachments/assets/ac196506-df28-4296-906a-cda678a4e64e" />
 ---
 
-| --- | --- |
-| **4 — Results** | Wiring diagram, product cards, buy list, cost estimate, code generator |
+
+**4 — Results** | Wiring diagram, product cards, buy list, cost estimate, code generator
 <img width="1918" height="949" alt="Screenshot 2026-08-09 161414" src="https://github.com/user-attachments/assets/4452c649-40e1-4906-a6e2-b74807f07c39" />
 
 ### Custom Project AI (Pro+)
@@ -242,79 +242,6 @@ node server.js
 npm run dev
 
 ```
-Server starts at `http://localhost:3001`. On first run the database is created and all 88 parts are seeded automatically.
-
-
-```
-  ✦  Traceboard API running on http://localhost:3001
-     Health check → http://localhost:3001/api/health
-
-```
-**Environment variables** — copy `backend/.env.example` to `backend/.env`:
-
-| Variable | Default | Description |
-| --- |---------| --- |
-| `PORT` | `3001` | API port |
-| `ALLOWED_ORIGINS` | `*` | Comma-separated CORS allowlist |
-
----
-
-## Backend API Reference
-
-Base URL: `http://localhost:3001`
-
-### Health
-
-```
-GET /api/health
-
-```
-### Parts Catalogue
-
-```
-GET  /api/parts               # full list (?cat=mcu&q=esp32)
-GET  /api/parts/stats         # counts per category
-GET  /api/parts/:id           # single part
-
-```
-### Recommendation Engine
-
-```
-POST /api/recommend
-{
-  "project": "home",        // home | environment | wearable | agriculture | security | robotics | energy
-  "power":   "battery",     // battery | solar | mains
-  "conn":    "wifi",        // wifi | ble | lora | gsm | none
-  "budget":  "standard",    // budget | standard | premium
-  "exp":     "beginner"     // beginner | intermediate | advanced
-}
-
-```
-### Saved Builds
-
-```
-GET    /api/builds?session=<uuid>   # list builds
-POST   /api/builds                  # save build
-GET    /api/builds/:id              # load one
-DELETE /api/builds/:id              # delete
-
-```
-### Export
-
-```
-POST /api/export/txt    # plain-text BOM download
-POST /api/export/json   # structured JSON export
-
-```
-### Analytics
-
-```
-GET /api/analytics/popular-projects
-GET /api/analytics/popular-mcus
-GET /api/analytics/prefs
-
-```
----
 
 ## Code Generator — Supported Parts
 
